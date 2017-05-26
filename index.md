@@ -1,9 +1,3 @@
----
-layout: index
-
-title: Tomáš Peterka   
----
-
 # DOH! Don't Hurt My Brain
 
 Voilà a list of eyes-bleeders which I think is important to know when you
