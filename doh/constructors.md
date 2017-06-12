@@ -1,7 +1,8 @@
 # Constructors
 
-Classes are overused. More testable is simple function. Use classes
-only when you need to keep state between two function calls.
+Disclaimer: I personally think that classes are being overused.
+A simple function is more testable and elegant. Classes should
+be used only when you need to keep state between two function calls.
 
 ## Constructor 
 
@@ -13,7 +14,7 @@ only when you need to keep state between two function calls.
 ### Why?
 
 Because of testability. For every class you are going to test you
-need to know in what state it is. If constructor was running some
+need to know in what state it is. If a constructor was running some
 functions in background you are not the one in control. That will
 lead to potentially different class state with the same construct
 parameters.
