@@ -12,5 +12,9 @@ can be added.
 
 There are two biggest downside of the project and both comprise its execution model
 
-  1/ Everything is run by root hence security is in stake (easily fixable IMHO)
-  2/ Wasting resources - there is an ingenious folders sharing but no database and other programmable storages sharing. Every role must launch its own DB/S3 to support its needs (hardly fixable - without lot of additional changes that brings the project much closer to Lokal architecture).
+1. Everything is run by root hence security is in stake (easily fixable IMHO)
+2. Wasting resources - there is an ingenious folders sharing but no database and other programmable storages sharing. Every role must launch its own DB/S3 to support its needs (hardly fixable - without lot of additional changes that brings the project much closer to Lokal architecture).
+
+The biggest drawback is the lack of higher quality roles. Since we need a multi-user server then we would use OpenLDAP and Authelia
+to start with and any role that supports external user accounts either via OAuth, LDAP or proxy authentication. Having to manage
+user accounts per-app is simply not doable.
